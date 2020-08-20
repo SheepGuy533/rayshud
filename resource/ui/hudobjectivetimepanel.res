@@ -1,8 +1,8 @@
 "Resource/UI/HudObjectiveTimePanel.res"
-{	
+{
 	"TimePanelBG"
 	{
-		"ControlName"		"ScalableImagePanel"
+		"ControlName"		"EditablePanel"
 		"fieldName"			"TimePanelBG"
 		"xpos"				"25"
 		"ypos"				"0"
@@ -11,14 +11,11 @@
 		"tall"				"24"
 		"visible"			"1"
 		"enabled"			"1"
-		"image"				"../hud/objectives_timepanel_blue_bg"
-		"scaleImage"		"1"
-		"src_corner_height"	"3"
-		"src_corner_width"	"3"
-		"draw_corner_width"	"0"
-		"draw_corner_height" "0"
-		
-		if_match {
+		"bgcolor_override"	"TransparentBlack"
+		"PaintBackgroundType"	"0"
+
+		if_match
+		{
 			"visible"		"0"
 		}
 	}
@@ -28,7 +25,7 @@
 		"fieldName"			"TimePanelProgressBar"
 		"xpos"				"67"
 		"ypos"				"16"
-		"zpos"				"4"	
+		"zpos"				"4"
 		"wide"				"20"
 		"tall"				"20"
 		"visible"			"0"
@@ -39,8 +36,9 @@
 		"color_inactive"	"TimerProgress.InActive"
 		"color_warning"		"TimerProgress.Warning"
 		"percent_warning"	"0.75"
-		
-		if_match {
+
+		if_match
+		{
 			"visible"		"0"
 		}
 	}
@@ -61,8 +59,8 @@
 		"dulltext"			"0"
 		"brighttext"		"0"
 		"wrap"				"0"
-		"font"				"Cerbetica12"
-		
+		"font"				"HudFontSmall"
+
 		if_match
 		{
 			"xpos"			"30"
@@ -80,7 +78,7 @@
 		"ControlName"		"CExLabel"
 		"fieldName"			"OvertimeLabel"
 		"xpos"				"25"
-		"ypos"				"20"
+		"ypos"				"32"
 		"zpos"				"5"
 		"wide"				"50"
 		"tall"				"24"
@@ -91,8 +89,8 @@
 		"dulltext"			"0"
 		"brighttext"		"0"
 		"wrap"				"0"
-		"font"				"Cerbetica12"
-		
+		"font"				"HudFontSmall"
+
 		if_match
 		{
 			"xpos"			"30"
@@ -121,8 +119,8 @@
 		"dulltext"			"0"
 		"brighttext"		"0"
 		"wrap"				"0"
-		"font"				"Cerbetica12"
-		
+		"font"				"HudFontSmall"
+
 		if_match
 		{
 			"xpos"			"30"
@@ -151,8 +149,8 @@
 		"dulltext"			"0"
 		"brighttext"		"0"
 		"wrap"				"0"
-		"font"				"Cerbetica12"
-		
+		"font"				"HudFontSmall"
+
 		if_match
 		{
 			"xpos"			"30"
@@ -181,13 +179,19 @@
 		"dulltext"			"0"
 		"brighttext"		"0"
 		"wrap"				"0"
-		"font"				"Cerbetica12"
-		
+		"font"				"HudFontSmallest"
+
 		if_match
 		{
 			"xpos"			"30"
 		}
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
+
 	"ServerTimeLimitLabelBG"
 	{
 		"ControlName"		"CTFImagePanel"

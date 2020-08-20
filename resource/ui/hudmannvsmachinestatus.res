@@ -1,5 +1,5 @@
 "Resource/UI/HudMannVsMachineStatus.res"
-{	
+{
 	"WaveStatusPanel"
 	{
 		"ControlName"		"CWaveStatusPanel"
@@ -12,7 +12,7 @@
 		"visible"			"1"
 		"enabled"			"1"
 	}
-	
+
 	"WaveCompleteSummaryPanel"
 	{
 		"ControlName"		"CWaveCompleteSummaryPanel"
@@ -25,7 +25,7 @@
 		"visible"			"1"
 		"enabled"			"1"
 	}
-	
+
 	"BossStatusPanel"
 	{
 		"ControlName"		"CMvMBossStatusPanel"
@@ -37,36 +37,40 @@
 		"tall"				"100"
 		"visible"			"1"
 		"enabled"			"1"
-		
+
 		"pin_to_sibling"			"WaveStatusPanel"
 		"pin_corner_to_sibling"		"4"
 		"pin_to_sibling_corner"		"6"
 	}
-	
+
 	"CurrencyStatusPanel"
 	{
 		"ControlName"		"CCurrencyStatusPanel"
 		"fieldName"			"CurrencyStatusPanel"
-		"xpos"				"c-190"
-		"ypos"				"r63"
-		"wide"				"100"
-		"tall"				"100"
-		"visible" 			"1"
-		"enabled" 			"1"
-	}
-	
-	"InWorldCurrencyPanel"
-	{
-		"ControlName"		"CInWorldCurrencyStatus"
-		"fieldName"			"InWorldCurrencyPanel"
-		"xpos"				"c-190"
-		"ypos"				"r42"
+		"xpos"				"c-267"
+		"xpos_minmode"		"c-250"
+		"ypos"				"r114"
+		"ypos_minmode"		"r190"
 		"wide"				"100"
 		"tall"				"20"
 		"visible" 			"1"
 		"enabled" 			"1"
 	}
-	
+
+	"InWorldCurrencyPanel"
+	{
+		"ControlName"		"CInWorldCurrencyStatus"
+		"fieldName"			"InWorldCurrencyPanel"
+		"xpos"				"c-267"
+		"xpos_minmode"		"c-250"
+		"ypos"				"r93"
+		"ypos_minmode"		"r168"
+		"wide"				"100"
+		"tall"				"20"
+		"visible" 			"1"
+		"enabled" 			"1"
+	}
+
 	"WarningSwoop"
 	{
 		"ControlName"		"CWarningSwoop"
@@ -82,7 +86,7 @@
 		"scaleImage"		"1"
 		"time"				"0.3"
 	}
-	
+
 	"UpgradeLevelContainer"
 	{
 		"ControlName"		"EditablePanel"
@@ -92,7 +96,7 @@
 		"wide"				"640"
 		"tall"				"480"
 		"visible"			"0"
-		
+
 		"UpgradeProgressTrack"
 		{
 			"ControlName"	"CMvMBombCarrierProgress"
@@ -101,10 +105,10 @@
 			"ypos"			"r35"
 			"wide"			"640"
 			"tall"			"480"
-			"visible"		"1"	
+			"visible"		"1"
 		}
-		
-		"UpgradeLevel1" 
+
+		"UpgradeLevel1"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"UpgradeLevel1"
@@ -120,8 +124,8 @@
 			"image"			"../hud/hud_mvm_bomb_upgrade_1_disabled"
 			"scaleImage"	"1"
 		}
-		
-		"UpgradeLevel2" 
+
+		"UpgradeLevel2"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"UpgradeLevel2"
@@ -137,8 +141,8 @@
 			"image"			"../hud/hud_mvm_bomb_upgrade_2_disabled"
 			"scaleImage"	"1"
 		}
-		
-		"UpgradeLevel3" 
+
+		"UpgradeLevel3"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"UpgradeLevel3"
@@ -155,7 +159,7 @@
 			"scaleImage"	"1"
 		}
 
-		"UpgradeLevelBoss" 
+		"UpgradeLevelBoss"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"UpgradeLevelBoss"
@@ -172,19 +176,20 @@
 			"scaleImage"	"1"
 		}
 	}
-	
+
 	"VictorySplash"
 	{
 		"ControlName"		"CVictorySplash"
 		"fieldName"			"VictorySplash"
 		"xpos"				"0"
 		"ypos"				"0"
+		//"zpos"			"102"
 		"wide"				"f0"
 		"tall"				"480"
 		"visible"			"0"
 		"enabled"			"1"
 	}
-	
+
 	"VictoryPanelContainer"
 	{
 		"ControlName"		"CMvMVictoryPanelContainer"
@@ -195,7 +200,7 @@
 		"tall"				"480"
 		"visible"			"0"
 	}
-	
+
 	"WaveLossPanel"
 	{
 		"ControlName"		"CMvMWaveLossPanel"
@@ -206,7 +211,7 @@
 		"tall"				"480"
 		"visible"			"0"
 	}
-	
+
 	"ServerChangeMessage"
 	{
 		"ControlName"		"EditablePanel"
@@ -216,27 +221,23 @@
 		"wide"				"f0"
 		"tall"				"480"
 		"visible"			"0"
-		
+
 		"Background"
 		{
-			"ControlName"	"ScalableImagePanel"
+			"ControlName"	"EditablePanel"
 			"fieldName"		"Background"
 			"xpos"			"c-150"
-			"ypos"			"400"
+			"ypos"			"390"
 			"wide"			"300"
-			"tall"			"20"
+			"tall"			"21"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"image"			"../hud/color_panel_red"
-
-			"src_corner_height"	"22"
-			"src_corner_width"	"22"
-			"draw_corner_width"	"5"
-			"draw_corner_height" "5"
+			"border"		"DarkRedTeamBorder"
+			"bgcolor_override"	"Red"
 		}
-	
+
 		"ServerChangeLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -245,7 +246,7 @@
 			"textAlignment"	"center"
 			"labelText"		"%servermessage%"
 			"xpos"			"c-150"
-			"ypos"			"400"
+			"ypos"			"390"
 			"wide"			"300"
 			"tall"			"20"
 			"visible"		"1"

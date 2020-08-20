@@ -5,11 +5,6 @@
 	"HudItemEffectMeter"
 	{
 		"ypos"					"c93"
-		"ypos_minmode"			"c53"
+		"ypos_minmode"			"c54"
 	}
-	
-	"ItemEffectMeterLabel"
-	{
-		"labelText"				"#TF_ENERGYDRINK"
-	}					
 }

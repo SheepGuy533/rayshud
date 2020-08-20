@@ -5,10 +5,10 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"			"HudStopWatchObjective"
 		"xpos"				"9999"
-		"ypos"				"9999"
+		"ypos"				"105"
 		"zpos"				"1"
 		"wide"				"275"
-		"tall"				"190"
+		"tall"				"130"
 		"visible"			"0"
 		"enabled"			"1"
 
@@ -20,17 +20,17 @@
 			"ypos"			"0"
 			"zpos"			"-1"
 			"wide"			"275"
-			"tall"			"170"
+			"tall"			"130"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			"../HUD/color_panel_browner"
-	
+
 			"src_corner_height"	"23"			// pixels inside the image
 			"src_corner_width"	"23"
 			"draw_corner_width"	"7"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"7"	
+			"draw_corner_height" 	"7"
 		}
 		"HudStopWatchObjectiveBGSmall"
 		{
@@ -40,20 +40,20 @@
 			"ypos"			"0"
 			"zpos"			"-1"
 			"wide"			"275"
-			"tall"			"100"
+			"tall"			"80"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"0"
 			"enabled"		"1"
 			"image"			"../HUD/color_panel_browner"
-			
+
 			"src_corner_height"	"23"			// pixels inside the image
 			"src_corner_width"	"23"
 			"draw_corner_width"	"7"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"7"	
+			"draw_corner_height" 	"7"
 		}
 		"HudStopWatchObjectiveLabel"
-		{	
+		{
 			"ControlName"	"Label"
 			"fieldName"		"HudStopWatchObjectiveLabel"
 			"font"			"HudFontSmallBoldShadow"
@@ -102,7 +102,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"tabPosition"	"0"	
+			"tabPosition"	"0"
 			"fillcolor"		"125 125 125 125"
 			"PaintBackgroundType"	"0"
 		}
@@ -114,7 +114,7 @@
 			"xpos"			"25"
 			"ypos"			"75"
 			"wide"			"225"
-			"tall"			"165"
+			"tall"			"150"
 			"wrap"			"1"
 			"autoResize"	"1"
 			"pinCorner"		"1"
@@ -125,7 +125,7 @@
 			"font"			"HudFontSmallestShadow"
 			"maxchars"		"-1"
 		}
-	}	
+	}
 
 	"HudStopWatchObjectiveArrow"
 	{

@@ -5,20 +5,21 @@
 		"fieldName"				"HudItemEffectMeter"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"c5"
-		"ypos"					"355"
-		"wide"					"500"
-		"tall"					"500"
+		"xpos"					"c155"
+		"ypos"					"c120"
+		"xpos_minmode"			"c95"
+		"ypos_minmode"			"c75"
+		"wide"					"40"
+		"tall"					"40"
 		"MeterFG"				"White"
 		"MeterBG"				"Gray"
 	}
-	
+
 	"ItemEffectMeterLabel"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterLabel"
-		"xpos"					"190"
-		"xpos_minmode"			"192"
+		"xpos"					"0"
 		"ypos"					"0"
 		"zpos"					"2"
 		"wide"					"40"
@@ -32,9 +33,10 @@
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"Cerbetica12"
+		"font"					"ItemFontAttribLarge"
+		"font_minmode"			"Default"
 	}
-	
+
 	"ItemEffectMeter"
 	{
 		"ControlName"			"ContinuousProgressBar"
@@ -42,11 +44,8 @@
 		"font"					"Default"
 		"xpos"					"25"
 		"ypos"					"23"
-		"ypos_minmode"			"0"
-		"xpos_minmode"			"50"
 		"zpos"					"2"
 		"wide"					"40"
-		"wide_minmode"			"50"
 		"tall"					"6"
 		"autoResize"			"0"
 		"pinCorner"				"0"
@@ -56,15 +55,14 @@
 		"dulltext"				"0"
 		"brighttext"			"0"
 	}
-	
+
 	"ItemEffectMeterCount"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterCount"
-		"xpos"					"190"
+		"xpos"					"0"
 		"ypos"					"10"
-		"xpos_minmode"			"192"
-		"ypos_minmode"			"5"
+		"ypos_minmode"			"8"
 		"zpos"					"2"
 		"wide"					"40"
 		"tall"					"20"
@@ -76,16 +74,16 @@
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"CerbeticaBold28"
-		"font_minmode"			"CerbeticaBold16"
+		"font"					"Cerbetica28"
+		"font_minmode"			"Cerbetica16"
 	}
-	
+
 	"ItemEffectMeterCountShadow"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterCountShadow"
-		"xpos"					"-1"
-		"ypos"					"-1"
+		"xpos"					"-2"
+		"ypos"					"-2"
 		"zpos"					"2"
 		"wide"					"40"
 		"tall"					"20"
@@ -97,10 +95,10 @@
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"CerbeticaBold28"
-		"font_minmode"			"CerbeticaBold16"
+		"font"					"Cerbetica28"
+		"font_minmode"			"Cerbetica16"
 		"fgcolor"				"TransparentBlack"
-		
+
 		"pin_to_sibling"		"ItemEffectMeterCount"
 		"pin_corner_to_sibling"	"PIN_TOPLEFT"
 		"pin_to_sibling_corner"	"PIN_TOPLEFT"

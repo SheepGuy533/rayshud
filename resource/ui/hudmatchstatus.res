@@ -8,7 +8,7 @@
 		"name_width"	"57"
 		"horiz_inset"	"2"
 	}
-	
+
 	"RoundSignModel"
 	{
 		"ControlName"	"CModelPanel"
@@ -24,7 +24,7 @@
 		"enabled"		"1"
 		"fov"			"70"
 		"proportionaltoparent"	"1"
-		
+
 		"model"
 		{
 			"modelname"	"models/props_ui/banner.mdl"
@@ -49,7 +49,7 @@
 				"name"			"intro"
 				"sequence"		"intro"
 			}
-			
+
 			"animation"
 			{
 				"name"			"outro"
@@ -57,9 +57,9 @@
 			}
 		}
 	}
-	
+
 	"CountdownLabel"
-	{	
+	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"CountdownLabel"
 		"font"			"HudFontGiant"
@@ -75,23 +75,17 @@
 		"wrap"			"0"
 		"labelText"		"%countdown%"
 		"textAlignment"	"center"
-		"proportionaltoparent"	"1"
 		"fgcolor"		"TanLight"
-
-		if_readymode
-		{
-			"xpos"			"300"
-			"ypos"			"130"
-		}
+		"proportionaltoparent"	"1"
 	}
-	
+
 	"CountdownLabelShadow"
-	{	
+	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"CountdownLabelShadow"
 		"font"			"HudFontGiant"
 		"xpos"			"cs-0.48"
-		"ypos"			"cs-0.08"
+		"ypos"			"cs-0.48"
 		"wide"			"40"
 		"tall"			"40"
 		"zpos"			"4"
@@ -104,12 +98,6 @@
 		"textAlignment"	"center"
 		"fgcolor"		"TransparentBlack"
 		"proportionaltoparent"	"1"
-
-		if_readymode
-		{
-			"xpos"			"300"
-			"ypos"			"130"
-		}
 	}
 
 	"FrontParticlePanel"
@@ -137,7 +125,7 @@
 			}
 		}
 
-		"paintbackground"	"0"	
+		"paintbackground"	"0"
 	}
 
 	"MatchDoors"
@@ -155,7 +143,7 @@
 		"enabled"		"1"
 		"fov"			"70"
 		"proportionaltoparent"	"1"
-		
+
 		"model"
 		{
 			"modelname"	"models/vgui/versus_doors.mdl"
@@ -179,7 +167,7 @@
 				"name"			"open"
 				"sequence"		"open"
 			}
-			
+
 			"animation"
 			{
 				"name"			"close"
@@ -199,7 +187,7 @@
 		"fieldName"		"RoundCounter"
 		"xpos"			"cs-0.5"
 		"ypos"			"-2"
-		"zpos"			"1"		
+		"zpos"			"1"
 		"wide"			"300"
 		"tall"			"100"
 		"visible"		"1"
@@ -214,19 +202,14 @@
 		"ypos"				"-5"
 		"zpos"				"0"
 		"wide"				"365"
-		"tall"				"0"
+		"tall"				"28"
 		"visible"			"0"
 		"proportionaltoaparent"	"1"
-		"border"			"TFFatLineBorder"
-		
-		if_match
-		{
-			"visible"		"1"
-		}
+		"border"			"NoBorder"
 	}
-	
+
 	"RankUpLabel"
-	{	
+	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"RankUpLabel"
 		"font"			"HudFontMediumSmallBold"
@@ -249,7 +232,7 @@
 	}
 
 	"RankUpShadowLabel"
-	{	
+	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"RankUpShadowLabel"
 		"font"			"HudFontMediumSmallBold"
@@ -285,8 +268,8 @@
 		"delta_item_x"			"22"
 		"delta_item_start_y"	"50"
 		"delta_item_end_y"		"70"
-		"PositiveColor"			"0 255 0 255"
-		"NegativeColor"			"255 0 0 255"
+		"PositiveColor"			"ColorGreen"
+		"NegativeColor"			"ColorRed"
 		"delta_lifetime"		"1.5"
 		"delta_item_font"		"HudFontMedium"
 
@@ -295,18 +278,17 @@
 			"delta_item_x"			"35"
 			"delta_item_start_y"	"12"
 			"delta_item_end_y"		"50"
-			"PositiveColor"			"0 255 0 255"
-			"NegativeColor"			"255 0 0 255"
+			"PositiveColor"			"ColorGreen"
+			"NegativeColor"			"ColorRed"
 			"delta_lifetime"		"1.5"
 			"delta_item_font"		"HudFontMediumSmall"
 		}
-		
+
 		"TimePanelValue"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"TimePanelValue"
 			"font"			"HudFontMediumSmall"
-			"font_minmode"	"HudFontSmall"
 			"fgcolor"		"TanLight"
 			"xpos"			"25"
 			"ypos"			"0"
@@ -326,9 +308,9 @@
 				"font"			"HudFontSmall"
 				"proportionaltoparent"	"1"
 			}
-		}	
+		}
 	}
-	
+
 	"TeamStatus"
 	{
 		"ControlName"	"CTFTeamStatus"
@@ -342,14 +324,14 @@
 		"enabled"		"1"
 
 		"max_size"		"19"
-		"6v6_gap"		"1"
+		"6v6_gap"		"2"
 		"12v12_gap"		"1"
 
 		"team1_grow_dir" 	"west"
 		"team1_base_x"		"c-45"
 		"team1_max_expand"	"133"
 
-		"team2_grow_dir" 	"east"
+		"team2_grow_dir"	"east"
 		"team2_base_x"		"c47"
 		"team2_max_expand"	"133"
 
@@ -360,8 +342,8 @@
 			"tall"			"50"
 			"zpos"			"1"
 
-			"color_portrait_bg_red"	"119 62 61 255"
-			"color_portrait_bg_blue"	"62 81 101 255"
+			"color_portrait_bg_red"		"Red"
+			"color_portrait_bg_blue"	"Blue"
 			"color_portrait_bg_red_dead"	"79 54 52 255"
 			"color_portrait_bg_blue_dead"	"44 49 51 255"
 			"color_bar_health_high"	"84 191 58 255"
@@ -371,7 +353,7 @@
 			"percentage_health_low"	"0.3"
 			"color_portrait_blend_dead_red"	"White"
 			"color_portrait_blend_dead_blue" "White"
-			
+
 			"playername"
 			{
 				"ControlName"	"CExLabel"
@@ -398,7 +380,7 @@
 				"visible"		"1"
 				"enabled"		"1"
 				"image"			"../hud/class_scoutred"
-				"scaleImage"	"1"	
+				"scaleImage"	"1"
 				"proportionaltoparent"	"1"
 			}
 			"classimagebg"
@@ -416,7 +398,7 @@
 				"proportionaltoparent"	"1"
 			}
 			"healthbar"
-			{	
+			{
 				"ControlName"	"ContinuousProgressBar"
 				"fieldName"		"healthbar"
 				"font"			"Default"
@@ -424,7 +406,7 @@
 				"ypos"			"19"
 				"zpos"			"5"
 				"wide"			"f0"
-				"tall"			"3"				
+				"tall"			"3"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -444,7 +426,7 @@
 				"ypos"			"19"
 				"zpos"			"6"
 				"wide"			"f0"
-				"tall"			"3"				
+				"tall"			"3"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -513,7 +495,7 @@
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"respawntime"
-				"font"			"Cerbetica9"
+				"font"			"HudFontSmallest"
 				"xpos"			"cs-0.5"
 				"ypos"			"0"
 				"zpos"			"5"
@@ -541,7 +523,7 @@
 				"visible"		"0"
 				"labelText"		"%chargeamount%"
 				"textAlignment"	"north"
-				"fgcolor"		"0 255 0 255"
+				"fgcolor"		"ColorGreen"
 			}
 			"specindex"
 			{
@@ -558,7 +540,7 @@
 				"visible"		"0"
 				"labelText"		"%specindex%"
 				"textAlignment"	"north-west"
-				//"fgcolor"		"235 226 202 255"
+				//"fgcolor"		"TanLight"
 			}
 			"DeathPanel"
 			{
@@ -571,9 +553,9 @@
 				"tall"			"24"
 				"visible"		"0"
 				"enabled"		"1"
-				"image"			"../HUD/comp_player_status"	
+				"image"			"../HUD/comp_player_status"
 				"scaleImage"	"1"
-				"proportionaltoparent"	"1"	
+				"proportionaltoparent"	"1"
 			}
 			"SkullPanel"
 			{
@@ -585,9 +567,9 @@
 				"tall"			"p0.15"
 				"visible"		"0"
 				"enabled"		"1"
-				"image"			"../HUD/comp_player_status_skull"	
+				"image"			"../HUD/comp_player_status_skull"
 				"scaleImage"	"1"
-				"proportionaltoparent"	"1"	
+				"proportionaltoparent"	"1"
 			}
 		}
 	}
@@ -603,7 +585,7 @@
 		"tall"				"260"
 		"visible"			"1"
 		"enabled"			"1"
-		
+
 		if_large
 		{
 			"ypos"			"65"
@@ -663,13 +645,13 @@
 			"fieldName"		"BlueLeaderAvatar"
 			"xpos"			"11"
 			"ypos"			"10"
-			"zpos"			"5"	
+			"zpos"			"5"
 			"wide"			"35"
 			"tall"			"35"
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			""
-			"scaleImage"	"1"	
+			"scaleImage"	"1"
 			"color_outline"	"52 48 45 255"
 		}
 		"BlueLeaderAvatarBG"
@@ -699,10 +681,10 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"autoresize"	"3"
-			"linespacing"	"26"
+			"linespacing"	"25"
 			"linegap"		"4"
 			//"show_columns"	"1"
-			
+
 			if_large
 			{
 				"tall"		"315"
@@ -722,7 +704,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"border"		"TFFatLineBorderClearBG"
-			
+
 			if_large
 			{
 				"tall"		"325"
@@ -741,7 +723,7 @@
 		"tall"				"260"
 		"visible"			"1"
 		"enabled"			"1"
-		
+
 		if_large
 		{
 			"ypos"			"65"
@@ -807,7 +789,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			""
-			"scaleImage"	"1"	
+			"scaleImage"	"1"
 			"color_outline"	"52 48 45 255"
 		}
 		"RedLeaderAvatarBG"
@@ -837,10 +819,10 @@
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"autoresize"	"3"
-			"linespacing"	"26"
+			"linespacing"	"25"
 			"linegap"		"4"
 			//"show_columns"	"1"
-			
+
 			if_large
 			{
 				"tall"		"315"
@@ -860,7 +842,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"border"		"TFFatLineBorderClearBG"
-			
+
 			if_large
 			{
 				"tall"		"325"

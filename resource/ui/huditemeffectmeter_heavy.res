@@ -5,11 +5,6 @@
 	"HudItemEffectMeter"
 	{
 		"ypos"					"c93"
-		"ypos_minmode"			"c53"
-	}
-	
-	"ItemEffectMeterLabel"
-	{
-		"labelText"				"#TF_Cleaver"
+		"ypos_minmode"			"c54"
 	}
 }

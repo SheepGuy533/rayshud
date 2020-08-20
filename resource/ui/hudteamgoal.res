@@ -5,7 +5,7 @@
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"HudTeamGoalBG"
 		"xpos"			"9999"
-		"ypos"			"9999"
+		"ypos"			"0"
 		"zpos"			"-1"
 		"wide"			"320"
 		"tall"			"150"
@@ -18,14 +18,14 @@
 		"teambg_2"		"../hud/death_panel_red_bg"
 		"teambg_3"		"../hud/death_panel_blue_bg"
 	}
-	
+
 	"SwitchLabel"
-	{	
+	{
 		"ControlName"	"Label"
 		"fieldName"		"SwitchLabel"
 		"font"			"HudFontSmallBold"
 		"xpos"			"9999"
-		"ypos"			"9999"
+		"ypos"			"20"
 		"zpos"			"1"
 		"wide"			"220"
 		"tall"			"15"
@@ -37,14 +37,14 @@
 		"labelText"		"#TF_teamswitch_attackers"
 		"textAlignment"	"North"
 	}
-	
+
 	"GoalLabel"
-	{	
+	{
 		"ControlName"	"Label"
 		"fieldName"		"GoalLabel"
 		"font"			"HudFontSmall"
 		"xpos"			"9999"
-		"ypos"			"9999"
+		"ypos"			"35"
 		"zpos"			"1"
 		"wide"			"220"
 		"tall"			"55"
@@ -56,13 +56,13 @@
 		"labelText"		""
 		"textAlignment"	"North"
 	}
-	
+
 	"GoalImage"
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"GoalImage"
 		"xpos"			"9999"
-		"ypos"			"9999"
+		"ypos"			"25"
 		"zpos"			"1"
 		"wide"			"45"
 		"tall"			"45"
