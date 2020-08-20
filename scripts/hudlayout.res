@@ -962,7 +962,7 @@
 		"visible" 				"0"
 		"enabled" 				"1"
 		"xpos"					"c-100"
-		"ypos"					"c60"
+		"ypos"					"c65"
 		//"ypos"					"c115"
 		//"ypos_minmode"			"298"
 		"zpos"					"1"

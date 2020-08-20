@@ -262,7 +262,7 @@
 		"ypos"				"0"
 		"zpos"				"2"
 		"wide"				"110"
-		"tall"				"150"
+		"tall"				"350"
 		"visible"			"0"
 		"enabled"			"1"
 		"delta_item_x"			"22"
